@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Your Account</h1>
+            <p>Join us today by creating your account below</p>
+        </header>
+        <section>
+            <form id="registration-form" action="http://localhost:3000" method="POST">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                    <label for="branch">Branch:</label>
+                    <input type="text" id="branch" name="branch" value="CSE" readonly>
+
+                    <button type="submit">Register</button>
+                </fieldset>
+                <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+        </section>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
